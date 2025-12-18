@@ -4,18 +4,29 @@ export default function HolaMundo() {
     return (
         <div style={{
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: '#f5f5f5'
+            background: '#2d5a27', // Dark green background
+            gap: '2rem'
         }}>
+            <div style={{
+                fontSize: '120px',
+                lineHeight: '1'
+            }}>
+                🐸
+            </div>
             <h1 style={{
                 fontSize: 'clamp(24px, 6vw, 48px)',
-                color: '#222',
+                color: '#ffff00', // Yellow text
                 textAlign: 'center',
-                padding: '0 16px'
+                padding: '0 16px',
+                fontFamily: 'system-ui, -apple-system, sans-serif',
+                fontWeight: '900',
+                textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
             }}>
-                HOLA MUNDO, SOY EL MEJOR JHUE DEL MUNDO
+                HOLA SOY EL JHUE TONTOH
             </h1>
         </div>
     );
